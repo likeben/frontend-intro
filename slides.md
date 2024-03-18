@@ -57,19 +57,29 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 ---
 
+```yaml
+layout: two-cols-header
+```
+
+<style>
+.slidev-layout.two-cols-header {
+  grid-template-rows: 100px 1fr;
+}
+</style>
+
 # 前端编程语言
 
-<br>
+::left::
+
 前端代码主要由HTML、CSS、 JavaScript构成：
-<br>
 
 - 📝 **HTML** - 网页的核心，用于构建页面的结构
 - 🎨 **CSS** - 控制网页的外观，设置页面的样式
 - 🧑‍💻 **JavaScript** - 增强网页的交互，添加动效
 
-<div class="absolute top-100px right-100px">
-  <img src="/WX20240317-232059@2x.png" class="w-400px mt-20px">
-</div>
+::right::
+
+<img src="/WX20240317-232059@2x.png" class="w-400px">
 
 ---
 
@@ -77,9 +87,7 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 HTML(HyperText Markup Language) 全称是超文本标记语言，它不是一门编程语言，而是一种用来告知浏览器如何组织页面的标记语言。它由一系列的元素（elements）组成，这些元素可以用来包围不同部分的内容，使其以某种方式呈现或者工作。
 
-<div>
-  <img src="/WX20240318-002124@2x.png" class="h-300px mx-auto">
-</div>
+<img src="/WX20240318-002124@2x.png" class="h-300px mx-auto">
 
 ---
 
@@ -87,9 +95,7 @@ HTML(HyperText Markup Language) 全称是超文本标记语言，它不是一门
 
 CSS(Cascading Style Sheets) 全称是层叠样式表，它是用来样式化和排版网页的 —— 例如更改网页内容的字体、颜色、大小和间距，将内容分割成多列或者加入动画以及别的装饰型效果。它通过选择器选中上面提到的 HTML 元素，然后为选中的元素添加颜色，间距等样式。
 
-<div>
-  <img src="/WX20240318-002048@2x.png" class="w-600px mx-auto">
-</div>
+<img src="/WX20240318-002048@2x.png" class="w-600px mx-auto">
 
 ---
 
@@ -97,9 +103,7 @@ CSS(Cascading Style Sheets) 全称是层叠样式表，它是用来样式化和�
 
 JS(JavaScript) 是一种脚本编程语言，它可以在网页上实现复杂的功能，网页展现给你的不再是简单的静态信息，而是实时的内容更新——交互式的地图、2D/3D 动画、滚动播放的视频等等。它因互联网而生，紧跟着浏览器的出现而问世。随着前端的迅猛发展，它已经不像刚开始出现时那样，只是为了做了一些页面的校验，已经成了构建企业级应用的重要语言之一，是目前全球使用率最高的语言。
 
-<div>
-  <img src="/JavaScript_code.png" class="w-500px mx-auto">
-</div>
+<img src="/JavaScript_code.png" class="w-500px mx-auto">
 
 ---
 
@@ -111,9 +115,7 @@ TypeScript 是微软公司开发的一种基于 JavaScript 语言的编程语言
 - 可以在编译阶段就发现大部分常见于法错误
 - 增强了编辑器和 IDE 的功能，包括代码补全、接口提示、跳转到定义、重构等
 
-<div>
-  <img src="/WX20240318-005220@2x.png" class="w-500px mx-auto mt-20px">
-</div>
+<img src="/WX20240318-005220@2x.png" class="w-500px mx-auto mt-20px">
 
 ---
 
@@ -123,9 +125,7 @@ Web 浏览器可以将您带到互联网的任何角落。它从 Web 上的其�
 
 主流浏览器的市场份额：
 
-<div>
-  <img src="/WX20240318-004929@2x.png" class="w-500px mx-auto">
-</div>
+<img src="/WX20240318-004929@2x.png" class="w-500px mx-auto">
 
 ---
 
@@ -134,9 +134,7 @@ Web 浏览器可以将您带到互联网的任何角落。它从 Web 上的其�
 Node.js是一个JavaScript运行时环境，将其能力扩展到服务器端。它是建立在 Chrome 的 V8 JavaScript引擎上。
 Node是一个事件驱动的非阻塞I/O模型。这意味着它是异步的，不会因为一个请求而阻塞（而是立即移动到下一个请求），这使得Node异常快速和高效。Node 使 JavaScript 成为了一种全栈语言。
 
-<div>
-  <img src="/node.jsreact-application-architecture-1024x432.jpg" class="w-600px mx-auto">
-</div>
+<img src="/node.jsreact-application-architecture-1024x432.jpg" class="w-600px mx-auto">
 
 ---
 
@@ -151,9 +149,7 @@ React 是一个用于构建用户界面的 JAVASCRIPT 库，主要用于构建 U
 5. 组件：通过 React 构建组件，使得代码更加容易得到复用，有利于开发大型项目
 6. 单向数据流：实现了单向响应的数据流，减少了重复代码，比传统数据绑定更简单
 
-<div>
-  <img src="/WX20240318-011500@2x.png" class="w-600px mx-auto">
-</div>
+<img src="/WX20240318-011500@2x.png" class="w-600px mx-auto">
 
 ---
 
@@ -161,9 +157,7 @@ React 是一个用于构建用户界面的 JAVASCRIPT 库，主要用于构建 U
 
 Electron是一个使用 JavaScript、HTML 和 CSS 构建桌面应用程序的框架。 通过嵌入 Chromium 和 Node.js，Electron 允许您只维护一份 JavaScript 代码，便可以创建能同时在 Windows、macOS 和 Linux 上运行的跨平台应用，而不需要原生应用开发经验。
 
-<div>
-  <img src="/code-server-architecture.png" class="w-600px mx-auto">
-</div>
+<img src="/code-server-architecture.png" class="w-600px mx-auto">
 
 ---
 
@@ -184,6 +178,85 @@ Atwood定律：“任何可以使用 JavaScript 来编写的应用，最终都�
 
 ---
 
+<!-- ./components/ThankYou.vue -->
+<div>
+  <ThankYou  />
+</div>
+
+<div class="fixed left-0px bottom-20px grid grid-cols-3 gap-10px h-300px">
+  <div v-click>
+
+```html
 <div class="h-full grid place-items-center">
-  <h1>Thank you</h1>
+  <div class="text-center">
+    <h1 id="text">前端技术之旅告一段落</h1>
+    <button
+      class="h-10 px-6 font-semibold rounded-md bg-indigo-600 text-white text-sm"
+      id="btn"
+    >
+      该做点什么呢
+    </button>
+  </div>
+</div>
+```
+
+  </div>
+
+  <div v-click>
+
+```css
+.grid {
+  display: grid;
+}
+.h-10 {
+  height: 2.5rem;
+}
+.h-full {
+  height: 100%;
+}
+.place-items-center {
+  place-items: center;
+}
+.rounded-md {
+  border-radius: 0.375rem;
+}
+.bg-indigo-600 {
+  --un-bg-opacity: 1;
+  background-color: rgb(79 70 229 / var(--un-bg-opacity));
+}
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.text-center {
+  text-align: center;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.text-white {
+  --un-text-opacity: 1;
+  color: rgb(255 255 255 / var(--un-text-opacity));
+}
+.font-semibold {
+  font-weight: 600;
+}
+```
+
+  </div>
+
+  <div v-click>
+
+```js
+document.getElementById("#btn").onclick = () => {
+  document.getElementById("#text").innerText = "谢谢大家，撒个花吧";
+  const triangle = confetti.shapeFromPath({ path: "M0 10 L5 0 L10 10z" });
+  confetti({
+    shapes: [triangle],
+  });
+};
+```
+
+  </div>
 </div>
